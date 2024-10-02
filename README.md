@@ -1,52 +1,40 @@
-# Project Name
-> Outline a brief description of your project.
+# Lending Club Case Study Analysis
 
-
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- The consumer finance company faces two critical risks in the loan approval process: potentially missing out on profitable business by rejecting creditworthy applicants and incurring financial losses by approving loans for applicants likely to default. 
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- The objective of this case study is to analyze data from past loan applicants to identify patterns and factors that indicate the likelihood of loan defaults.
+
+## Approach
+We will use EDA to understand how consumer attributes and loan attributes influence the tendency of default.
+- Accepted
+  - Fully Paid - Loan is completely repaid.
+  - Current - Applicant is still making payments.
+  - Charged-off - Applicant has defaulted on the loan.
+- Rejected: No transactional history is available for the applicant.
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Determinants of Default Risk:
+ -Annual Income: Lower incomes correlate with higher default rates.
+- Loan Term: 60-month loans show higher default rates than 36-month loans.
+- Employment Length: Longer employment tenure (10+ years) is associated with higher repayment rates.
+- Loan Grade: Higher-grade loans (A, B) have lower default rates compared to lower-grade loans (D, E, F, G).
 
+Economic Indicators:
+- High Debt-to-Income (DTI) ratios and revolving credit utilization indicate greater risk.
+- Interest Rates:
+- Charged-off loans tend to have higher median interest rates, reflecting increased repayment burdens.
+
+Predictive Decision-Making:
+- The company should refine loan approval criteria based on data-driven insights to better manage risk.
+- Enhanced Risk Management:
+- Pivot tables and correlation analyses highlight interactions between various factors influencing default risk.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- Python Libraries (Pandas, Numpy, Seaborn, Matplotlib)
+- MS Excel
+- Jupyter notebook
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
